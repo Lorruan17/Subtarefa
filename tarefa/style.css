@@ -1,4 +1,3 @@
-
 body {
     background: rgb(172, 211, 255);
     font: normal 15pt Arial;
@@ -45,16 +44,15 @@ div {
     text-align: center;
 }
 
-select#flista {
-    width: 150px;
-}
 h2 {
     text-align: center;
 }
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-
+div#div1, div#div2, div#div3{
+    display: inline-block; 
+    width: 25%;
+    vertical-align: top;
 }
-
+div#div4 {
+    float: right;
+    width: 20%;
+}
