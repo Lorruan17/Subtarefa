@@ -1,5 +1,8 @@
-let semenas = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado']
-let mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+    var datas = new Date()
+    var dia = datas.getDate()
+    var mes1 = datas.getMonth()
+    let semenas = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado']
+    let mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 
 
 
@@ -14,8 +17,6 @@ function dat(params) {
     var horas = datas.getHours() 
     var minutos = datas.getMinutes()
     var diasem = datas.getDay()
-    var dia = datas.getDate()
-    var mes1 = datas.getMonth()
     var ano = datas.getFullYear()
     let n1 = `Hoje é ${semanas[diasem]} dia ${dia}, de ${mes[mes1]} de ${ano}`
     let hor = `São exatamente ${horas} horas e ${minutos} minutos!`
@@ -162,3 +163,41 @@ function deze() {
     var secao = document.getElementById('s2')
     secao.style.background = 'crimson'
 }
+var dados = []
+
+function salvar() {
+    let nome = document.getElementById('nomes3').value
+    let email = document.getElementById('emails3').value
+    let id = document.getElementById('ids3').value
+  
+    dados.push({
+      nome: nome,
+      email: email,
+      id: id
+    
+   
+    })
+     document.getElementById('nomes3').value = '';
+            document.getElementById('emails3').value = '';
+            document.getElementById('ids3').value = '';
+  }
+  
+
+function mostrardados() {
+    let mostrar = document.getElementById('res3');
+    mostrar.innerHTML = ''
+  
+    for (let i = 0; i < dados.length; i++) {
+      let dado = dados[i]
+  
+      let nome = dado.nome
+      let email = dado.email
+      let id = dado.id
+  
+      let div = document.createElement('div')
+      div.innerHTML = `Nome: ${nome}, Email: ${email}, ID: ${id}`
+  
+      mostrar.appendChild(div)
+    }
+  }
+  

@@ -56,3 +56,36 @@ div#div4 {
     float: right;
     width: 20%;
 }
+
+input#bt1:hover {
+    color: red;
+    font-size: 20px;
+    background: black;
+    font-family: monospace;
+    
+}
+
+input#bt1 {
+    border-radius: 6px;
+    background: #F5DEB3;
+    height: 40px;
+    top: auto;
+    
+    
+    
+   
+   
+}
+input#fuc2{
+    border-radius: 6px;
+    background: #F5DEB3;
+    height: 50px;
+
+}
+
+input#fuc2:hover {
+    color: red;
+    font-size: 23px;
+    background: black;
+    font-family: monospace;
+}
