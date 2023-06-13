@@ -1,0 +1,61 @@
+body {
+    background: rgb(148, 146, 146);
+}
+  
+
+
+  
+section#prin {
+    
+    
+    background: rgb(199, 199, 199);
+    font-style: italic;
+    height: 900px;
+    padding: 15px;
+    width: 600px;
+    margin-left: auto;
+    border-radius: 20px
+
+
+}
+label#txt1 {
+    font-size: 35px;
+}
+label#txt2 {
+    font-size: 35px;
+}
+input#texnome {
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+
+}
+input#senha {
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+}
+img#ft {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    float: left;
+    width: 700px;
+    height: 900px;
+}
+  
+  .content {
+    background-color: rgb(199, 199, 199);
+    padding: 10px;
+  }
+  
+  h1#h11 {
+    font-size: 40px;
+  }
+  
+  .content {
+    overflow: auto;
+  }
+  
